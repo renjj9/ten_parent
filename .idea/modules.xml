@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ten_article/ten_article.iml" filepath="$PROJECT_DIR$/ten_article/ten_article.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ten_base/ten_base.iml" filepath="$PROJECT_DIR$/ten_base/ten_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ten_common/ten_common.iml" filepath="$PROJECT_DIR$/ten_common/ten_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ten_eureka/ten_eureka.iml" filepath="$PROJECT_DIR$/ten_eureka/ten_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ten_gathering/ten_gathering.iml" filepath="$PROJECT_DIR$/ten_gathering/ten_gathering.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ten_parent.iml" filepath="$PROJECT_DIR$/ten_parent.iml" />
+    </modules>
+  </component>
+</project>
