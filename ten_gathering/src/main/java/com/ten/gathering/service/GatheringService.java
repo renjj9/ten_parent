@@ -1,7 +1,7 @@
-package com.ten.article.service;
+package com.ten.gathering.service;
 
-import com.ten.article.dao.GatheringDao;
-import com.ten.article.pojo.Gathering;
+import com.ten.gathering.dao.GatheringDao;
+import com.ten.gathering.pojo.Gathering;
 import com.ten.util.IdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;

@@ -1,4 +1,4 @@
-package com.ten.base.controller;
+package com.ten.gathering.controller;
 
 import com.ten.entity.Result;
 import com.ten.entity.StatusCode;

@@ -1,4 +1,4 @@
-package com.ten.article.pojo;
+package com.ten.gathering.pojo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 

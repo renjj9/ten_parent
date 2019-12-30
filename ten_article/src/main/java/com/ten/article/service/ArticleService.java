@@ -85,7 +85,7 @@ public class ArticleService {
 			article=articleDao.findById(id).get();
 			redisTemplate.opsForValue().set("article_"+id,article,20, TimeUnit.SECONDS);
 
-			System.out.println("将文章对象放入缓存");
+			System.out.println("将文章对象放入缓存key="+"article_"+id);
 		}
 		return article;
 	}

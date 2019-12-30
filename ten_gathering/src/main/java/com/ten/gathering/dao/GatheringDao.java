@@ -1,6 +1,6 @@
-package com.ten.article.dao;
+package com.ten.gathering.dao;
 
-import com.ten.article.pojo.Gathering;
+import com.ten.gathering.pojo.Gathering;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 

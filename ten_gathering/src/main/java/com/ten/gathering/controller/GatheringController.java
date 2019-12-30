@@ -1,17 +1,13 @@
-package com.ten.article.controller;
+package com.ten.gathering.controller;
 
-import com.ten.article.pojo.Article;
-import com.ten.article.pojo.Gathering;
-import com.ten.article.service.GatheringService;
+import com.ten.gathering.pojo.Gathering;
+import com.ten.gathering.service.GatheringService;
 import com.ten.entity.Result;
 import com.ten.entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.List;
 
 /**
  * 控制器层
@@ -39,13 +35,13 @@ public class GatheringController {
 	@RequestMapping(value="/{id}",method= RequestMethod.GET)
 	public Result findById(@PathVariable String id){
 		// 1根据服务名称，获取服务实例。有可能是集群，所以是service实例集合
-		List<ServiceInstance> instances = discoveryClient.getInstances("ten-article");
-		ServiceInstance instance = instances.get(0);
-		String baseUrl = "http://" + instance.getHost() + ":" + instance.getPort() + "/article/" + id;
+		//List<ServiceInstance> instances = discoveryClient.getInstances("ten-article");
+		//ServiceInstance instance = instances.get(0);
+		//String baseUrl = "http://" + instance.getHost() + ":" + instance.getPort() + "/article/" + id;
 		//2
-		//String baseUrl = "http://ten-article/article/" + id;
+		String baseUrl = "http://ten-article/article/" + id;
 
-		Article forObject = this.restTemplate.getForObject(baseUrl, Article.class);
+		String forObject = this.restTemplate.getForObject(baseUrl, String.class);
 		return new Result(true,StatusCode.OK,"查询成功",forObject);
 		//return new Result(true,StatusCode.OK,"查询成功", gatheringService.findById(id));
 	}
