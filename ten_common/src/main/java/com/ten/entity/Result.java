@@ -11,6 +11,9 @@ public class Result<T> {
     private String message;     
     private Object data;
 
+    public Result() {
+    }
+
     public Result(boolean flag, Integer code, String message, Object data) {
         this.flag = flag;
         this.code = code;
@@ -22,5 +25,15 @@ public class Result<T> {
         this.flag = flag;
         this.code = code;
         this.message = message;
+    }
+
+    @Override
+    public String toString() {
+        return "Result{" +
+                "flag=" + flag +
+                ", code=" + code +
+                ", message='" + message + '\'' +
+                ", data=" + data +
+                '}';
     }
 }

@@ -41,6 +41,11 @@ public class ArticleController {
 	 */
 	@RequestMapping(value="/{id}",method= RequestMethod.GET)
 	public Result findById(@PathVariable String id){
+		try {
+			//Thread.sleep(6000);//随机休眠一段时间，以触发熔断
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return new Result(true,StatusCode.OK,"查询成功",articleService.findById(id));
 	}
 

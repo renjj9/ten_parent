@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloudConsumer/cloudConsumer.iml" filepath="$PROJECT_DIR$/cloudConsumer/cloudConsumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ten_article/ten_article.iml" filepath="$PROJECT_DIR$/ten_article/ten_article.iml" />
       <module fileurl="file://$PROJECT_DIR$/ten_base/ten_base.iml" filepath="$PROJECT_DIR$/ten_base/ten_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/ten_common/ten_common.iml" filepath="$PROJECT_DIR$/ten_common/ten_common.iml" />

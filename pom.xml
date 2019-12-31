@@ -13,6 +13,7 @@
         <module>ten_article</module>
         <module>ten_gathering</module>
         <module>ten_eureka</module>
+        <module>cloudConsumer</module>
     </modules>
 
     <packaging>pom</packaging>
